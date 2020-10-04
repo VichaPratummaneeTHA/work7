@@ -1,0 +1,72 @@
+@import "config";
+
+body {
+  background: $dark-color;
+  color: $light-color;
+}
+
+.navbar {
+  border-bottom: $primary-color 3px solid;
+  opacity: 0.7;
+}
+
+// Home Section
+
+#home {
+  &-section {
+    background: $showcase-image no-repeat center center / cover;
+    background-attachment: fixed;
+    min-height: 700px;
+
+    .dark-overlay {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      min-height: 700px;
+      background: rgba(0, 0, 0, 0.8);
+
+      .home-inner {
+        padding-top: 9rem;
+
+        .fas {
+          background: $light-color;
+          color: $primary-color;
+          padding: 0.5rem;
+          border-radius: 0.2rem;
+        }
+
+        .card-form {
+          opacity: 0.8;
+        }
+      }
+    }
+  }
+}
+
+// Explore Section
+
+#explore,
+#share {
+  &-body {
+    .fas {
+      background: $dark-color;
+      color: $light-color;
+      padding: 0.5rem;
+      border-radius: 0.2rem;
+    }
+  }
+}
+
+// Create Section
+
+#create {
+  &-body {
+    .fas {
+      background: $light-color;
+      color: $primary-color;
+      padding: 0.5rem;
+      border-radius: 0.2rem;
+    }
+  }
+}
